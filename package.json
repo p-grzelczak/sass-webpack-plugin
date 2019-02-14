@@ -1,6 +1,6 @@
 {
   "name": "sass-webpack-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get your stylesheets together",
   "main": "index.js",
   "module": "index.es.js",
@@ -11,7 +11,6 @@
     "lint": "eslint src test",
     "demo": "npm run build && webpack-dev-server --config ./demo/webpack.config.js",
     "test": "npm run lint && mocha --compilers js:babel-register",
-    "preversion": "npm test",
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm publish ./dist"
   },
